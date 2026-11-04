@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driving School Training Management</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <a class="logo"><span class="logo-icon">D</span>Drive<span>Pro</span></a>
+        <button class="menu-button" id="menuButton"></button>
+        <nav class="nav-links" id="navLinks">
+            <a href="#home"><button>Home</button></a>
+            <a href="#courses"><button>Courses</button></a>
+            <a href="#learners"><button>Learners</button></a>
+            <a href="#instructors"><button>Instructors</button></a>
+            <a href="#vehicles"><button>Vehicles</button></a>
+            <a href="#schedule"><button>Schedule</button></a>
+            <a href="#progress"><button>Progress</button></a>
+            <a href="#about"><button>About</button></a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- HOME -->
+        <section id="home" class="page active">
+            <header class="topbanner">
+                <p class="tag-line">YOUR JOURNEY STARTS HERE</p>
+                <h1>Learn to drive.<br><span>Drive with confidence.</span></h1>
+                <p class="top-banner-text">Trained instructors, well-kept vehicles and a clear progress record for every
+                    learner.</p>
+                <p class="top-banner-buttons">
+                    <a href="#learners"><button class="button yellow">Register Learner </button></a>
+                    <a href="#courses"><button class="button outline-light">Explore Courses</button></a>
+                </p>
+                <p class="banner-note">Learn safely. Drive confidently.</p>
+            </header>
+
+            <ul class="count-bar">
+                <li><strong>0</strong><span>Learners</span></li>
+                <li><strong>0</strong><span>Instructors</span></li>
+                <li><strong>0</strong><span>Vehicles</span></li>
+                <li><strong>0</strong><span>Test Ready</span></li>
+            </ul>
+
+            <section class="section-block">
+                <header class="section-heading">
+                    <p class="tag-line">HOW IT WORKS</p>
+                    <h2>Four steps to your licence test</h2>
+                    <p>Everything a driving school needs in one simple dashboard.</p>
+                </header>
+                <ol class="steps">
+                    <li class="step">
+                        <b>1</b>
+                        <h3>Register</h3>
+                        <p>Create a learner profile.</p>
+                    </li>
+                    <li class="step">
+                        <b>2</b>
+                        <h3>Learn theory</h3>
+                        <p>Attend road-rule classes.</p>
+                    </li>
+                    <li class="step">
+                        <b>3</b>
+                        <h3>Practise</h3>
+                        <p>Book car sessions with an instructor.</p>
+                    </li>
+                    <li class="step">
+                        <b>4</b>
+                        <h3>Take the test</h3>
+                        <p>Get marked “Test Ready”.</p>
+                    </li>
+                </ol>
+            </section>
+
+            <section class="box">
+                <header class="top-head">
+                    <p class="tag-line">MEET THE TEAM</p>
+                    <h2>Our Expert instructors </h2>
+                    <img src="Our Instructors.jpg" alt="Instructor Images" style="width: 50%; max-width: 800px; height: auto; margin: 0 auto;">
+                </header>
+                <section class="cards"></section>
+            </section>
+
+            <div class="big-box">
+                <p class="tag-line">READY TO BEGIN?</p>
+                <h2>Take the first step towards driving independently.</h2>
+                <button class="button dark">Add a Learner ↗</button>
+            </div>
+        </section>
+
+        <!-- COURSES -->
+        <section id="courses" class="page">
+            <header class="page-banner">
+                <p class="tag-line">TRAINING PROGRAMS</p>
+                <h1>Choose your learning path</h1>
+                <p>Learn the basics, understand road rules and practise driving skills.</p>
+            </header>
+            <section class="section-block card-grid">
+                <article class="course-card">
+                    <div class="course-picture course-one"></div>
+                    <span class="tag">THEORY</span>
+                    <h3>Road Rules and Signs</h3>
+                    <p>Traffic signs, right of way and safe driving habits.</p>
+                    <a href="#schedule"><button class="text-button">View Schedule ↗</button></a>
+                </article>
+                <article class="course-card">
+                    <div class="course-picture course-two"></div>
+                    <span class="tag">PRACTICAL</span>
+                    <h3>Basic Driving Skills</h3>
+                    <p>Steering, clutch control, starting and stopping.</p>
+                    <a href="#schedule"><button class="text-button">View Schedule ↗</button></a>
+                </article>
+                <article class="course-card">
+                    <div class="course-picture course-three"></div>
+                    <span class="tag">PRACTICAL</span>
+                    <h3>Road Practice</h3>
+                    <p>Traffic awareness, lane discipline and parking.</p>
+                    <a href="#schedule"><button class="text-button">View Schedule ↗</button></a>
+                </article>
+            </section>
+        </section>
+
+        <!-- LEARNERS -->
+        <section id="learners" class="page">
+            <header class="page-banner compact-banner">
+                <p class="tag-line">TRAINING MANAGEMENT</p>
+                <h1>Learner Profiles</h1>
+                <p>Add learners and track their theory and practical training.</p>
+            </header>
+            <section class="section-block">
+                <form class="form-card" id="learnerForm">
+                    <h2>Register a learner</h2>
+                    <fieldset class="form-grid">
+                        <label for="1Name">Learner Name:</label>
+                        <input type="text" id="1Name" placeholder="Name" required>
+                        <br><br>
+                        <label for="1Phone">Phone:</label>
+                        <input type="tel" id="1Phone" placeholder="Phone" required>
+                        <br><br>
+                        <label for="1Email">Email:</label>
+                        <input type="email" id="1Email" placeholder="Email" required>
+                        <br><br>
+                        <label for="1Age">Age:</label>
+                        <input type="number" id="1Age" placeholder="Age" min="18" max="80" required>
+                        <br><br>
+
+                    </fieldset>
+                    <button class="button yellow" type="submit">Add Learner +</button>
+                </form>
+                <section class="table-card">
+                    <header class="table-title">
+                        <h2>Learner records</h2><input id="searchLearner" class="search" placeholder="Search Name">
+                    </header>
+                    <div class="table-scroll">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Learner</th>
+                                    <th>Contact</th>
+                                    <th>Theory</th>
+                                    <th>Practical</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="learnerTable"></tbody>
+                        </table>
+                    </div>
+                    <p class="empty-message" id="learnerEmpty">No learners found.</p>
+                </section>
+            </section>
+        </section>
+
+        <!-- INSTRUCTORS -->
+        <section id="instructors" class="page">
+            <header class="page-banner compact-banner">
+                <p class="tag-line">OUR TRAINING TEAM</p>
+                <h1>Instructors</h1>
+                <p>Add and manage driving instructors.</p>
+            </header>
+            <section class="section-block">
+                <form class="form-card" id="instructorForm">
+                    <h2>Add an instructor</h2>
+                    <fieldset class="form-grid">
+
+                        <label for="iName">Name:</label>
+                        <input type="text" id="iName" placeholder="Name" required>
+                        <br><br>
+                        <label for="iPhone">Phone:</label>
+                        <input type="tel" id="iPhone" placeholder="Phone" required>
+                        <br><br>
+                        <label for="iExp">Experience(years):</label>
+                        <input type="number" id="iExp" placeholder="Experience" required>
+                        <br><br>
+                        <label for="iSkill">Specialty:</label>
+                        <select id="iSkill">
+                            <option>Car Training</option>
+                            <option>Theory Classes</option>
+                            <option>Highway Driving</option>
+                        </select>
+                        <br><br>
+                    </fieldset>
+                    <button class="button yellow" type="submit">Add Instructor +</button>
+                </form>
+                <section class="card-grid" id="instructorCards"></section>
+                <p class="empty-message" id="instructorEmpty">No instructors added yet.</p>
+            </section>
+        </section>
+
+        <!-- VEHICLES -->
+        <section id="vehicles" class="page">
+            <header class="page-banner compact-banner">
+                <p class="tag-line">OUR TRAINING FLEET</p>
+                <h1>Vehicles</h1>
+                <p>Keep vehicle details and availability up to date.</p>
+            </header>
+            <section class="section-block">
+                <form class="form-card" id="vehicleForm">
+                    <h2>Add a vehicle</h2>
+                    <br>
+                    <label for="vNumber">Vehicle number:</label>
+                    <input type="text" id="vNumber" placeholder="Vehicle number" required>
+                    <br><br>
+
+                    <label for="vModel">Model:</label>
+                    <input type="text" id="vModel" placeholder="Model" required>
+                    <br><br>
+
+                    <label for="vType">Type:</label>
+                    <select id="vType">
+                        <option>Manual Car</option>
+                        <option>Automatic Car</option>
+                        <option>Scooter</option>
+                    </select>
+                    <br><br>
+
+                    <label for="vStatus">Availability:</label>
+                    <select id="vStatus">
+                        <option>Available</option>
+                        <option>In Use</option>
+                        <option>Under Maintenance</option>
+                    </select>
+                    <br><br>
+
+                    <button class="button yellow" type="submit">Add Vehicle +</button>
+                </form>
+                <section class="card-grid" id="vehicleCards"></section>
+                <p class="empty-message" id="vehicleEmpty">No vehicles added yet.</p>
+            </section>
+        </section>
+
+        <!-- SCHEDULE -->
+        <section id="schedule" class="page">
+            <header class="page-banner compact-banner">
+                <p class="tag-line">PLAN THE TRAINING</p>
+                <h1>Training Schedule</h1>
+                <p>Theory classes and practical driving sessions.</p>
+            </header>
+            <section class="section-block">
+                <section class="two-forms">
+                    <form class="form-card" id="theoryForm">
+                        <h2>Theory class</h2>
+                        <br>
+                        <label for="tTopic">Topic:</label>
+                        <input type="text" id="tTopic" placeholder="Topic" required>
+                        <br><br>
+
+                        <label for="tDate">Date:</label>
+                        <input type="date" id="tDate" required>
+                        <br><br>
+
+                        <label for="tInstructor">Instructor:</label>
+                        <select id="tInstructor" required>
+                            <option value="">Select Instructor</option>
+                        </select>
+                        <br><br>
+
+                        <button class="button yellow" type="submit">Add Class</button>
+                    </form>
+                    <br><br>
+
+                    <form class="form-card" id="sessionForm">
+                        <h2>Driving session</h2>
+                        <br>
+                        <label for="sLearner">Learner:</label>
+                        <select id="sLearner" required>
+                            <option value="">Select Learner</option>
+                        </select>
+                        <br><br>
+
+                        <label for="sDate">Date:</label>
+                        <input type="date" id="sDate" required>
+                        <br><br>
+
+                        <label for="sVehicle">Vehicle:</label>
+                        <select id="sVehicle" required>
+                            <option value="">Select Vehicle</option>
+                        </select>
+                        <br><br>
+
+                        <label for="sInstructor">Instructor:</label>
+                        <select id="sInstructor" required>
+                            <option value="">Select Instructor</option>
+                        </select>
+                        <br><br>
+
+                        <button class="button yellow" type="submit">Book Session</button>
+                    </form>
+                </section>
+                <section class="table-card">
+                    <header class="table-title">
+                        <h2>Theory classes</h2><span class="table-label">THEORY</span>
+                    </header>
+                    <div class="table-scroll">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Topic</th>
+                                    <th>Date</th>
+                                    <th>Instructor</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="theoryTable"></tbody>
+                        </table>
+                    </div>
+                    <p class="empty-message" id="theoryEmpty">No theory classes yet.</p>
+                </section>
+                <section class="table-card">
+                    <header class="table-title">
+                        <h2>Driving sessions</h2><span class="table-label">PRACTICAL</span>
+                    </header>
+                    <div class="table-scroll">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Learner</th>
+                                    <th>Date</th>
+                                    <th>Vehicle</th>
+                                    <th>Instructor</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="sessionTable"></tbody>
+                        </table>
+                    </div>
+                    <p class="empty-message" id="sessionEmpty">No driving sessions yet.</p>
+                </section>
+            </section>
+        </section>
+
+        <!-- PROGRESS -->
+        <section id="progress" class="page">
+            <header class="page-banner compact-banner">
+                <p class="tag-line">LEARNER DEVELOPMENT</p>
+                <h1>Progress And Test Readiness</h1>
+                <p>See how far each learner has progressed.</p>
+            </header>
+            <section class="section-block">
+                <div class="info-note"><strong>Project rule:</strong> a learner is “Test Ready” after <b>5 theory
+                        classes</b> and <b>8 practical sessions</b>. These are sample targets, not official
+                    requirements.</div>
+                <section class="card-grid" id="progressCards"></section>
+                <p class="empty-message" id="progressEmpty">Add learners to see their progress.</p>
+            </section>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="page">
+            <header class="page-banner">
+                <p class="tag-line">GET TO KNOW US</p>
+                <h1>About DrivePro</h1>
+                <p>Helping learners build confidence and responsible driving habits.</p>
+            </header>
+            <section class="about-layout section-block">
+                <div class="about-photo"></div>
+                <article>
+                    <p class="tag-line">OUR PURPOSE</p>
+                    <h2>Good drivers are <span>made with good training.</span></h2>
+                    <p class="body-copy">DrivePro is a driving-school training management platform: learner profiles,
+                        instructors, vehicles, theory classes, driving sessions, progress tracking and test readiness.
+                </article>
+            </section>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <h2 class="footer-logo">Drive<span>Pro</span></h2>
+        <p>Learn safely. Drive confidently.</p>
+       
+    </footer>
+     
+</body>
+
+</html>
